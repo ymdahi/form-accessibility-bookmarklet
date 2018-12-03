@@ -5,10 +5,11 @@
     
     // document text input
     //var documentTextInput = document.getElementsByClassName("termText").getElementsByTagName("input");
-    var documentTextInput = document.querySelectorAll(".termText > input");
-    var documentTextPlaceholder = documentTextInput.placeholder;
-    console.log(documentTextInput);
-    console.log('placeholder: ' + documentTextPlaceholder);
+
+    var labelElement = "<label for='textInput'>Document text</label>";
+    var parent = document.querySelectorAll("div.termText");
+    parent.appendChild(labelElement);
+
     
     
 
