@@ -22,14 +22,15 @@
     function initMyBookmarklet() {
       (window.myBookmarklet = function() {
         
-        var documentTextLabel = '<label for="textInput">Document text</label>';
-        var documentTextInput = $('.termText');
-        $(documentTextInput).find('.inputTextZone').prepend(documentTextLabel);
+        // var documentTextLabel = '<label for="textInput">Document text</label>';
+        // var documentTextInput = $('.termText');
+        // $(documentTextInput).find('.inputTextZone').prepend(documentTextLabel);
 
         $('input[type=text][placeholder]').each(function(){
           //var inputPlaceholder = $(this).attr('placeholder');
+          $(this).parent().css('display','block');
           $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label');
-          console.log(inputPlaceholder);
+          //console.log(inputPlaceholder);
           
         });
         
