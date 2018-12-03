@@ -26,8 +26,8 @@
         var documentTextInput = $('.termText');
         $(documentTextInput).find('.inputTextZone').prepend(documentTextLabel);
 
-        $('input[type=text]').each(function(){
-          var inputPlaceholder = $(this).attr('placeholder');
+        $('input[type=text][placeholder]').each(function(){
+          //var inputPlaceholder = $(this).attr('placeholder');
           $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label');
           console.log(inputPlaceholder);
           
