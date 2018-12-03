@@ -18,6 +18,7 @@
       };
       //document.getElementsByTagName("head")[0].appendChild(script);
       console.log(('first if'));
+      initMyBookmarklet();
       
     } else {
       initMyBookmarklet();
