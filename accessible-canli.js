@@ -1,7 +1,15 @@
 (function () {
 
-    var form = document.getElementsByTagName("form");
-    console.log(form);
+    // var form = document.getElementsByTagName("input[type='text']");
+    // console.log(form);
     
+    // document text input
+    var documentTextInput = document.getElementsByClassName("termText").getElementsByTagName("input");
+    var documentTextPlaceholder = documentTextInput.placeholder;
+    console.log(documentTextInput);
+    console.log('placeholder: ' + documentTextPlaceholder);
+    
+    
+
   
   })()
