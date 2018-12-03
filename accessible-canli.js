@@ -23,7 +23,7 @@
       (window.myBookmarklet = function() {
         var documentTextLabel = '<label for="textInput">Document text</label>';
         var documentTextInput = $('.termText');
-        $(documentTextInput).child('inputTextZone').prepend(documentTextLabel);
+        $(documentTextInput).find('.inputTextZone').prepend(documentTextLabel);
         
       })();
     }
