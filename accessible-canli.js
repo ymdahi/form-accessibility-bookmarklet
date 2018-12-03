@@ -21,9 +21,17 @@
 
     function initMyBookmarklet() {
       (window.myBookmarklet = function() {
+        
         var documentTextLabel = '<label for="textInput">Document text</label>';
         var documentTextInput = $('.termText');
         $(documentTextInput).find('.inputTextZone').prepend(documentTextLabel);
+
+        $('input[type=text]').each(function(){
+          var inputPlaceholder = $(this).attr('placeholder');
+          $(this).parent().prepend('<label>Test</label');
+          console.log(inputPlaceholder);
+          
+        });
         
       })();
     }
