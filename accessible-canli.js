@@ -11,13 +11,11 @@
       script.onload = script.onreadystatechange = function(){
         if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
           done = true;
-          console.log(('second if'));
           initMyBookmarklet();
 
         }
       };
       //document.getElementsByTagName("head")[0].appendChild(script);
-      console.log(('first if'));
       initMyBookmarklet();
       
     } else {
@@ -35,7 +33,6 @@
           //var inputPlaceholder = $(this).attr('placeholder');
           $(this).parent().css('display','inline');
           $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label');
-          console.log('inside function');
           
         });
         
