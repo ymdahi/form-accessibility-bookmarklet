@@ -21,8 +21,9 @@
 
     function initMyBookmarklet() {
       (window.myBookmarklet = function() {
-        var test = $('.termText input');
-        console.log(test);
+        var documentTextLabel = '<label for="textInput">Document text</label>';
+        var documentTextInput = $('.termText');
+        $(documentTextInput).child('inputTextZone').prepend(documentTextLabel);
         
       })();
     }
