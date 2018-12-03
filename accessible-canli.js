@@ -28,7 +28,7 @@
 
         $('input[type=text]').each(function(){
           var inputPlaceholder = $(this).attr('placeholder');
-          $(this).parent().prepend('<label>Test</label');
+          $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label');
           console.log(inputPlaceholder);
           
         });
