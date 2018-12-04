@@ -24,11 +24,7 @@
 
     function initMyBookmarklet() {
       (window.myBookmarklet = function() {
-        
-        // var documentTextLabel = '<label for="textInput">Document text</label>';
-        // var documentTextInput = $('.termText');
-        // $(documentTextInput).find('.inputTextZone').prepend(documentTextLabel);
-
+      
         $('input[type=text][placeholder]').each(function(){
           //var inputPlaceholder = $(this).attr('placeholder');
           $(this).parent().css('display','inline');
@@ -38,19 +34,5 @@
         
       })();
     }
-
-    // var form = document.getElementsByTagName("input[type='text']");
-    // console.log(form);
     
-    // document text input
-    //var documentTextInput = document.getElementsByClassName("termText").getElementsByTagName("input");
-
-    // var labelElement = "<label for='textInput'>Document text</label>";
-    // var parent = document.querySelectorAll("div.termText");
-    // parent.appendChild(labelElement);
-
-    
-    
-
-  
   })()
