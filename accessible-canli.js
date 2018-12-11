@@ -31,6 +31,8 @@
           $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label');          
         });
         $('button.search').attr('title','Search');
+
+        $('head').append('<link href="//ymdahi.github.io/form-accessibility-bookmarklet/accessible-canli.css" type="text/css" rel="stylesheet" />')
         
       })();
     }
