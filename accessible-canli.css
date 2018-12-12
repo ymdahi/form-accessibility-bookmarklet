@@ -8,13 +8,13 @@ a:focus {
 input:hover,
 input:focus,
 input:active {
-    background-color: #F2A900;
-    color: #330072;
+    background-color: #F2A900 !important;
+    color: #330072 !important;
 }
 
 button:hover,
 button:focus,
 button:active {
-    background-color: #F2A900;
-    color: #330072;
+    background-color: #F2A900 !important;
+    color: #330072 !important;
 }
