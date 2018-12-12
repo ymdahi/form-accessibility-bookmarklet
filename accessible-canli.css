@@ -1,4 +1,20 @@
 a:hover,
 a:focus {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    background-color: #F2A900;
+    color: #330072;
+}
+
+input:hover,
+input:focus,
+input:active {
+    background-color: #F2A900;
+    color: #330072;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #F2A900;
+    color: #330072;
 }
