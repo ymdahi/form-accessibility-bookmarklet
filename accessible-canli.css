@@ -16,5 +16,6 @@ button:hover,
 button:focus,
 button:active {
     background-color: #F2A900 !important;
+    background-image: linear-gradient(to bottom, #F2A900, #F2A900) !important;
     color: #330072 !important;
 }
