@@ -1,4 +1,5 @@
 # Form Accessibility Bookmarklet
 
-This bookmarklet injects a label into the form input elements when there are no labels provided.
+A set of bookmarklets to modern and make accessible scholary databases and search applications that have not been updated in a while.
 
+https://ymdahi.github.io/form-accessibility-bookmarklet/index.html
