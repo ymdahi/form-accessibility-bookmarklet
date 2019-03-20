@@ -28,7 +28,7 @@
         $('input[type=text][placeholder]').each(function(){
           //var inputPlaceholder = $(this).attr('placeholder');
           $(this).parent().css('display','inline');
-          $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label');          
+          $(this).parent().prepend('<label for="' + $(this).attr('id') + '">' + $(this).attr('placeholder') + '</label>');          
         });
         $('button.search').attr('title','Search');
 
